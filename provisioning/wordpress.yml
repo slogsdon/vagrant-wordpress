@@ -1,0 +1,13 @@
+---
+- name: Install WordPress, MySQL, Nginx, and PHP-FPM
+  user: vagrant
+  hosts: all
+  sudo: true
+
+  roles:
+    - apt
+    - common
+    - mysql
+    - nginx
+    - php
+    - wordpress
